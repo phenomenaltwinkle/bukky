@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="magenta">
+    <h1 color="white" align="middle">FORM SAMPLE</h1>
+	<br>
+	<form method="POST">
+		<div >
+		<label for="readonly">DEPARTMENT FOR:</label>
+		<input type="text" name="readonly" value="COMPUTER SCIENCE" readonly> 
+		<label for="time" >SELECT TIME:</label>
+		<input type="time" name="time" >
+	</div>
+		<br>
+		<div>
+			<fieldset>
+				<legend> PERSONAL INFO:</legend>
+				<div>
+<label for="fname">FIRST NAME:</label>
+<input type="text" name="fname"  placeholder="YOUR FIRST NAME">
+</div>
+<br>
+<div>
+	<label for="lname">LAST NAME:</label>
+	<input type="text" name="lname" placeholder="lastname with O">
+</div>
+	<br>
+	<div>
+	<label for="mobile">TELEPHONE NUMBER:</label>
+<input type="tel" name="phone number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+</div>
+<br>
+<div>
+<label for="email">EMAIL ADDRESS:</label>
+<input type="email" name="gmail" placeholder="someone@email.com">	
+</div>
+</fieldset>
+</div>
+<br>
+<div>
+<label for="matric">MATRIC NUMBER:</label>
+<input type="text" name="mat" placeholder="19/47CS/0000" required>
+</div>
+<br>
+<div>
+	<label for="ilu" >COUNTRY:</label>
+	<select id="ilu" name="country">
+		<option value="NIGER">NIGER</option>
+		<option value="MALI">MALI</option>
+		<option value="CHAD">CHAD</option>
+		<option value="GHANA">GHANA</option>
+		<option value="CAMEROON">CAMEROON</option>
+		<option value="TOGO">TOGO</option>
+		<option value="SOUTH AFRICA" selected>SOUTH AFRICA</option>
+		<option value="RWANDA">RWANDA</option>
+	</select>
+</div>
+<br>
+<div>
+<label for="age"> AGE:</label>	
+<input type="number" name="age"min="16" max="30" value="16" autofocus >
+</div>
+<br>
+<div>
+<label for="bday">BIRTHDAY:</label>
+<input type="date" name="bday" id="bday" max="2004-12-31" min="1990-01-01">
+</div>
+<br>
+<div > 
+	<label for="courses">COURSES:</label>
+	<select name="courses">
+	<option>CSC 203</option>
+	<option>CSC 205</option>
+	<option>MAT 201</option>
+	<option>MAT 203</option>
+	<option>GNS 203</option>
+	<option>CSC 105</option>
+	<option>GNS 201</option>
+</select>
+</div>
+<br>
+<div>
+	<label for="books">BOOKS TO LEND:</label>
+	<select name="books" multiple size="5">
+		<option>ENG</option>
+		<option>MAT</option>
+		<option>COMP</option>
+		<option>PHY</option>
+		<option>GNS</option>
+	</select>
+</div>
+<br> 
+<div>
+<label for="origin">STATE OF ORIGIN</label>
+<input list="state" name="states"> 
+	<datalist id="state">
+		<option value="LAGOS">
+		<option value="ILORIN">
+		<option value="OYO">
+		<option value="OGUN">
+		<option value="OSUN">	
+	</datalist>
+</div>
+<br>
+<div>
+<label for="religion">RELIGION:</label>
+<input type="radio" name="religion" value="CHRISTIANITY">
+<label>CHRISTIANITY</label>
+<input type="radio" name="religion" value="ISLAM">
+<label>ISLAM</label>
+<input type="radio" name="religion" value="OTHERS">
+<label>OTHERS</label>
+</div>
+<br> 
+<div>
+<label for="file">UPLOAD YOUR DOCUMENTS:</label>	
+<input type="file" name="files" multiple>
+</div>
+<br>
+<div>
+	<textarea name="message" name="chat"placeholder="WRITE YOUR OPINION" rows="25" cols="40"></textarea>
+	<input type="button" name="button" value="PUSH ME!" id="button">
+	<br>
+	<br>
+	<input type="submit" name=" submit" value="CLICK TO SUBMIT" target="_blank">
+</div>
+	</form>
+</body>
+</html>
